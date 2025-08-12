@@ -43,22 +43,19 @@ The Student Dashboard consists of three main components:
 ```bash
 git clone https://github.com/your-username/student-dashboard.git
 cd student-dashboard
-2. Install dependencies
-bash
-Copy
-Edit
+
+###2. Install dependencies
+```bash
 npm install
-3. Run the development server
-bash
-Copy
-Edit
+
+###3. Run the development server
+```bash
 ng serve
+
 Then visit http://localhost:4200 in your browser.
 
 Project Structure
-css
-Copy
-Edit
+```bash
 src/
 │
 ├── app/
@@ -78,6 +75,8 @@ src/
 │   │   └── courses.css
 │
 └── main.ts
+
+
 Learning Objectives
 This project was built as a lab assignment to practice:
 
