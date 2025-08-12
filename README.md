@@ -2,7 +2,7 @@
 
 A simple Angular 20 application that demonstrates:
 - Component communication with `@Input` and `@Output`
-- Dynamic rendering using `*ngFor` / `@for`
+- Dynamic rendering using `@for`
 - Template reference variables and `@ViewChild` / `@ViewChildren`
 - Content projection (`<ng-content>`) and `@ContentChild`
 
