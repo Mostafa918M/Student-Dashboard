@@ -2,7 +2,7 @@
 
 A simple Angular 20 application that demonstrates:
 - Component communication with `@Input` and `@Output`
-- Dynamic rendering using `*ngFor` / `@for`
+- Dynamic rendering using `@for`
 - Template reference variables and `@ViewChild` / `@ViewChildren`
 - Content projection (`<ng-content>`) and `@ContentChild`
 
@@ -43,3 +43,58 @@ The Student Dashboard consists of three main components:
 ```bash
 git clone https://github.com/your-username/student-dashboard.git
 cd student-dashboard
+```
+###2. Install dependencies
+```bash
+npm install
+```
+
+###3. Run the development server
+```bash
+ng serve
+```
+
+Then visit http://localhost:4200 in your browser.
+
+Project Structure
+```bash
+src/
+│
+├── app/
+│   ├── teacher/
+│   │   ├── teacher.ts
+│   │   ├── teacher.html
+│   │   └── teacher.css
+│   │
+│   ├── student/
+│   │   ├── student.ts
+│   │   ├── student.html
+│   │   └── student.css
+│   │
+│   ├── courses/
+│   │   ├── courses.ts
+│   │   ├── courses.html
+│   │   └── courses.css
+│
+└── main.ts
+```
+
+Learning Objectives
+This project was built as a lab assignment to practice:
+
+Parent-to-child data passing (@Input)
+
+Child-to-parent event emission (@Output + EventEmitter)
+
+Accessing DOM and child components via:
+
+@ViewChild
+
+@ViewChildren
+
+@ContentChild
+
+Using Angular's content projection to create flexible components.
+
+License
+This project is open source and available under the MIT License.
