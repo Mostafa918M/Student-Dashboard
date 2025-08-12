@@ -1,59 +1,99 @@
-# StudentDashboard
+# Student Dashboard — Angular 20
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+A simple Angular 20 application that demonstrates:
+- Component communication with `@Input` and `@Output`
+- Dynamic rendering using `*ngFor` / `@for`
+- Template reference variables and `@ViewChild` / `@ViewChildren`
+- Content projection (`<ng-content>`) and `@ContentChild`
 
-## Development server
+---
 
-To start a local development server, run:
+## Overview
 
+The Student Dashboard consists of three main components:
+
+### Teacher Component
+- Displays the teacher's name.
+- Maintains a dynamic list of students.
+- Allows adding new students via an input field.
+- Shows the currently selected student.
+
+### Student Component
+- Receives the student's name via `@Input`.
+- Emits the selected student's name back to Teacher using `@Output`.
+- Displays each student in a styled card with a "Select" button.
+
+### Courses Component
+- Demonstrates content projection — receives and displays a course list from the parent.
+- Uses `@ContentChild` to get a reference to projected content.
+- Styled as a clean card block.
+
+---
+
+## Tech Stack
+- Angular 20
+- TypeScript
+- HTML5 & CSS3
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
 ```bash
+git clone https://github.com/your-username/student-dashboard.git
+cd student-dashboard
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Run the development server
+bash
+Copy
+Edit
 ng serve
-```
+Then visit http://localhost:4200 in your browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Project Structure
+css
+Copy
+Edit
+src/
+│
+├── app/
+│   ├── teacher/
+│   │   ├── teacher.ts
+│   │   ├── teacher.html
+│   │   └── teacher.css
+│   │
+│   ├── student/
+│   │   ├── student.ts
+│   │   ├── student.html
+│   │   └── student.css
+│   │
+│   ├── courses/
+│   │   ├── courses.ts
+│   │   ├── courses.html
+│   │   └── courses.css
+│
+└── main.ts
+Learning Objectives
+This project was built as a lab assignment to practice:
 
-## Code scaffolding
+Parent-to-child data passing (@Input)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Child-to-parent event emission (@Output + EventEmitter)
 
-```bash
-ng generate component component-name
-```
+Accessing DOM and child components via:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+@ViewChild
 
-```bash
-ng generate --help
-```
+@ViewChildren
 
-## Building
+@ContentChild
 
-To build the project run:
+Using Angular's content projection to create flexible components.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+License
+This project is open source and available under the MIT License.
