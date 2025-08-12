@@ -78,14 +78,17 @@ src/
 │
 └── main.ts
 ```
-
+---
 ##screenshots
-
+---
 ##Student Dashboard
+---
 ![Teacher View](/src/assets/Student%20Dashboard.png)
 ##add New Student
+---
 ![add New Student](/src//assets/add-new-student.png)
 ##Select Student
+---
 ![Select Student](/src/assets/select-student.png)
 
 Learning Objectives
