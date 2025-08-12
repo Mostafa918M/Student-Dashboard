@@ -79,15 +79,15 @@ src/
 └── main.ts
 ```
 ---
-##screenshots
+### Screenshots
 ---
-##Student Dashboard
+## Student Dashboard
 ---
 ![Teacher View](/src/assets/Student%20Dashboard.png)
-##add New Student
+## Add New Student
 ---
 ![add New Student](/src//assets/add-new-student.png)
-##Select Student
+## Select Student
 ---
 ![Select Student](/src/assets/select-student.png)
 
