@@ -82,14 +82,14 @@ src/
 ## Screenshots
 ---
 ### Student Dashboard
----
 ![Teacher View](/src/assets/Student%20Dashboard.png)
+---
 ### Add New Student
----
 ![add New Student](/src//assets/add-new-student.png)
-### Select Student
 ---
+### Select Student
 ![Select Student](/src/assets/select-student.png)
+---
 
 Learning Objectives
 This project was built as a lab assignment to practice:
