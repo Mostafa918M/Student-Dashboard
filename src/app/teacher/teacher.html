@@ -1,7 +1,9 @@
 <h2>Teacher: Mr. Omar</h2>
 
-<input #studentNameInput type="text" placeholder="Enter new student name">
-<button (click)="addStudent(studentNameInput.value)">Add Student</button>
+<div class="add-student">
+  <input #studentNameInput type="text" placeholder="Enter new student name" />
+  <button (click)="addStudent(studentNameInput.value)">Add Student</button>
+</div>
 
 @for (s of students; track s) {
   <app-student

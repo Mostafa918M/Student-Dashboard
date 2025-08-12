@@ -9,7 +9,7 @@ import { Courses } from "../courses/courses";
   styleUrl: './teacher.css'
 })
 export class Teacher {
-students = ['Ali', 'Aisha', 'Hassan'];
+students = ['Mostafa'];
 selectedStudent:string =''
  @ViewChild('studentNameInput') inputElement!: ElementRef;
   @ViewChildren(Student) studentComponents!: QueryList<Student>;
