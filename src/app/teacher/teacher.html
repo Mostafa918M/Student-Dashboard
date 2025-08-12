@@ -1,0 +1,23 @@
+<h2>Teacher: Mr. Omar</h2>
+
+<input #studentNameInput type="text" placeholder="Enter new student name">
+<button (click)="addStudent(studentNameInput.value)">Add Student</button>
+
+@for (s of students; track s) {
+  <app-student
+    [name]="s"
+    (studentSelected)="onStudentChosen($event)">
+  </app-student>
+}
+
+@if(selectedStudent){
+<p>Selected Student: {{ selectedStudent }}</p>
+}
+
+<app-courses>
+<ul #courseList>
+  <li>Math</li>
+  <li>Science</li>
+  <li>Arabic</li>
+</ul>
+</app-courses>
